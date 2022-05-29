@@ -37,6 +37,11 @@
             background-color: rgb(14, 14, 119);
             padding-bottom: 10px;
         }
+        
+        #jap {
+            background-color:#c6e5d9;
+            padding-bottom:10px;
+        }
 
         nav {
             background-color: black;
@@ -64,7 +69,14 @@
             background-color: rgb(141, 0, 0);
             color: white;
         }
-
+        
+        .jap-meal {
+            margin: 10px;
+            padding: 10px;
+            background-color: #d68189;
+            color: black;
+        }
+        
         #tsina {
             text-align: center;
             font-family: 'Architects Daughter', cursive;
@@ -80,7 +92,15 @@
             font-size: 50px;
             color: white;
         }
-
+        
+        .catname {
+            text-align: center;
+            font-family: 'Architects Daughter', cursive;
+            padding-top: 5px;
+            font-size: 50px;
+            color: white;
+        }
+        
         #collapsibleNavbar {
             background-color: black;
             color: white;
@@ -97,6 +117,11 @@
             text-align: center;
         }
 
+        .jap-food-title {
+            font-family: 'Architects Daughter', cursive;
+            text-align: center;
+        }
+        
         #backcolor {
             background-color: rgba(245, 245, 245, 0.895);
             padding: 10px;
@@ -117,6 +142,12 @@
         }
         .filibutton {
             background-color: rgb(255, 183, 0);
+            color: black;
+            font-family: 'Architects Daughter', cursive;
+            float: right;
+        }
+        .japbutton {
+            background-color: #f4ead5;
             color: black;
             font-family: 'Architects Daughter', cursive;
             float: right;
@@ -375,130 +406,170 @@
             </div>
             <br>
 
-            <div class="row">
-                <div class="col-sm-12">
-                    <div class="card" id="indie">
-                        <h2>Indian</h2>
-                        <div class="card-group">
-                            <div class="card">
-                                <img src="https://tmbidigitalassetsazure.blob.core.windows.net/rms3-prod/attachments/37/1200x1200/Pizza-from-Scratch_EXPS_FT20_8621_F_0505_1_home.jpg"
-                                    class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">Pizza</h5>
-                                    <p class="card-text">Some description of pizza.</p>
-                                    <button class="btn btn-primary">Add to Cart</button>
+            <div class="card" id="indian">
+                <h2 class="catname">Indian</h2>
+                    <div class="row">
+                            <div class="col-md-4">
+                                <div class="card ind-meal">
+                                    <img src="https://tmbidigitalassetsazure.blob.core.windows.net/rms3-prod/attachments/37/1200x1200/Pizza-from-Scratch_EXPS_FT20_8621_F_0505_1_home.jpg"
+                                        class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title ind-food-title">Pizza</h5>
+                                        <p class="card-text">Some description of pizza.</p>
+                                        <br>
+                                        <p class="card-text">P100</p>
+                                        <button class="btn indbutton">Add to Cart</button>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="card">
-                                <img src="https://tmbidigitalassetsazure.blob.core.windows.net/rms3-prod/attachments/37/1200x1200/Pizza-from-Scratch_EXPS_FT20_8621_F_0505_1_home.jpg"
-                                    class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">Pizza</h5>
-                                    <p class="card-text">Some description of pizza.</p>
-                                    <button class="btn btn-primary">Add to Cart</button>
+                            <div class="col-md-4">
+                                <div class="card ind-meal">
+                                    <img src="https://tmbidigitalassetsazure.blob.core.windows.net/rms3-prod/attachments/37/1200x1200/Pizza-from-Scratch_EXPS_FT20_8621_F_0505_1_home.jpg" 
+                                         class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title ind-food-title">Pizza</h5>
+                                        <p class="card-text">Some description of pizza.</p>
+                                        <br>
+                                        <p class="card-text">P100</p>
+                                        <button class="btn indbutton">Add to Cart</button>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="card">
-                                <img src="https://tmbidigitalassetsazure.blob.core.windows.net/rms3-prod/attachments/37/1200x1200/Pizza-from-Scratch_EXPS_FT20_8621_F_0505_1_home.jpg"
-                                    class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">Pizza</h5>
-                                    <p class="card-text">Some description of pizza.</p>
-                                    <button class="btn btn-primary">Add to Cart</button>
+                            <div class="col-md-4">
+                                <div class="card ind-meal">
+                                    <img src="https://tmbidigitalassetsazure.blob.core.windows.net/rms3-prod/attachments/37/1200x1200/Pizza-from-Scratch_EXPS_FT20_8621_F_0505_1_home.jpg" 
+                                         class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title ind-food-title">Pizza</h5>
+                                        <p class="card-text">Some description of pizza.</p>
+                                        <br>
+                                        <p class="card-text">P100</p>
+                                        <button class="btn indbutton">Add to Cart</button>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="card">
-                                <img src="https://tmbidigitalassetsazure.blob.core.windows.net/rms3-prod/attachments/37/1200x1200/Pizza-from-Scratch_EXPS_FT20_8621_F_0505_1_home.jpg"
-                                    class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">Pizza</h5>
-                                    <p class="card-text">Some description of pizza.</p>
-                                    <button class="btn btn-primary">Add to Cart</button>
+                            <div class="col-md-4">
+                                <div class="card ind-meal">
+                                    <img src="https://tmbidigitalassetsazure.blob.core.windows.net/rms3-prod/attachments/37/1200x1200/Pizza-from-Scratch_EXPS_FT20_8621_F_0505_1_home.jpg" 
+                                         class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title ind-food-title">Pizza</h5>
+                                        <p class="card-text">Some description of pizza.</p>
+                                        <br>
+                                        <p class="card-text">P100</p>
+                                        <button class="btn indbutton">Add to Cart</button>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="card">
-                                <img src="https://tmbidigitalassetsazure.blob.core.windows.net/rms3-prod/attachments/37/1200x1200/Pizza-from-Scratch_EXPS_FT20_8621_F_0505_1_home.jpg"
-                                    class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">Pizza</h5>
-                                    <p class="card-text">Some description of pizza.</p>
-                                    <button class="btn btn-primary">Add to Cart</button>
+                            <div class="col-md-4">
+                                <div class="card ind-meal">
+                                    <img src="https://tmbidigitalassetsazure.blob.core.windows.net/rms3-prod/attachments/37/1200x1200/Pizza-from-Scratch_EXPS_FT20_8621_F_0505_1_home.jpg" 
+                                         class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title ind-food-title">Pizza</h5>
+                                        <p class="card-text">Some description of pizza.</p>
+                                        <br>
+                                        <p class="card-text">P100</p>
+                                        <button class="btn indbutton">Add to Cart</button>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="card">
-                                <img src="https://tmbidigitalassetsazure.blob.core.windows.net/rms3-prod/attachments/37/1200x1200/Pizza-from-Scratch_EXPS_FT20_8621_F_0505_1_home.jpg"
+                            <div class="col-md-4">
+                                <div class="card ind-meal">
+                                    <img src="https://tmbidigitalassetsazure.blob.core.windows.net/rms3-prod/attachments/37/1200x1200/Pizza-from-Scratch_EXPS_FT20_8621_F_0505_1_home.jpg"
                                     class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">Pizza</h5>
-                                    <p class="card-text">Some description of pizza.</p>
-                                    <button class="btn btn-primary">Add to Cart</button>
+                                    <div class="card-body">
+                                        <h5 class="card-title ind-food-title">Pizza</h5>
+                                        <p class="card-text">Some description of pizza.</p>
+                                        <br>
+                                        <p class="card-text">P100</p>
+                                        <button class="btn indbutton">Add to Cart</button>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
                     </div>
-                </div>
             </div>
             <br>
 
-            <div class="row">
-                <div class="col-sm-12">
-                    <div class="card" id="japan">
-                        <h2>Japanese</h2>
-                        <div class="card-group">
-                            <div class="card">
-                                <img src="https://myfoodbook.com.au/sites/default/files/styles/sr_mo/public/recipe_photo/teriyaki-chicken.jpg"
-                                    class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">Chicken Teriyaki Bento</h5>
-                                    <p class="card-text">Some description of pizza.</p>
-                                    <button class="btn btn-primary">Add to Cart</button>
+            <div class="card" id="jap">
+                <h2 class="catname">Waku Waku Japan</h2>
+                    <div class="row">
+                            <div class="col-md-4">
+                                <div class="card jap-meal">
+                                    <img src="https://myfoodbook.com.au/sites/default/files/styles/sr_mo/public/recipe_photo/teriyaki-chicken.jpg"
+                                        class="card-img-top" alt="chickent">
+                                    <div class="card-body">
+                                        <h5 class="card-title jap-food-title">Chicken Teriyaki Bento</h5>
+                                        <p class="card-text">Chicken cutlets topped with sweet teriyaki sauce</p>
+                                        <br>
+                                        <p class="card-text">P535</p>
+                                        <button class="btn japbutton">Add to Cart</button>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="card">
-                                <img src="https://i.ibb.co/jZWX8Dy/Zaru-Soba.png" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">Zaru Soba</h5>
-                                    <p class="card-text">Some description of pizza.</p>
-                                    <button class="btn btn-primary">Add to Cart</button>
+                            <div class="col-md-4">
+                                <div class="card jap-meal">
+                                    <img src="https://i.ibb.co/jZWX8Dy/Zaru-Soba.png" class="card-img-top" alt="zsoba">
+                                    <div class="card-body">
+                                        <h5 class="card-title jap-food-title">Zaru Soba</h5>
+                                        <p class="card-text">Traditional buckwheat soba with dipping sauce</p>
+                                        <br>
+                                        <p class="card-text">P275</p>
+                                        <button class="btn japbutton">Add to Cart</button>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="card">
-                                <img src="https://i.ibb.co/sw74h3k/Sushi-Bento.png" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">Sushi & Maki Bento Box</h5>
-                                    <p class="card-text">Some description of pizza.</p>
-                                    <button class="btn btn-primary">Add to Cart</button>
+                            <div class="col-md-4">
+                                <div class="card jap-meal">
+                                    <img src="https://i.ibb.co/sw74h3k/Sushi-Bento.png" class="card-img-top" alt="smbentobox">
+                                    <div class="card-body">
+                                        <h5 class="card-title jap-food-title">Sushi & Maki Bento Box</h5>
+                                        <p class="card-text">Authentic sushi and maki all in a set</p>
+                                        <br>
+                                        <p class="card-text">P650</p>
+                                        <button class="btn japbutton">Add to Cart</button>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="card">
-                                <img src="https://i.ibb.co/wYPf9Ms/Tempura-Box.png" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">Tempura Rice Box</h5>
-                                    <p class="card-text">Some description of pizza.</p>
-                                    <button class="btn btn-primary">Add to Cart</button>
+                            <div class="col-md-4">
+                                <div class="card jap-meal">
+                                    <img src="https://i.ibb.co/wYPf9Ms/Tempura-Box.png" class="card-img-top" alt="tempurabx">
+                                    <div class="card-body">
+                                        <h5 class="card-title jap-food-title">Tempura Rice Box</h5>
+                                        <p class="card-text">Fan-favorite tempura on top of rice</p>
+                                        <br>
+                                        <p class="card-text">P250</p>
+                                        <button class="btn japbutton">Add to Cart</button>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="card">
-                                <img src="https://i.ibb.co/0Grz9CM/Omurice.png" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">Chicken Curry Omurice Bento</h5>
-                                    <p class="card-text">Some description of pizza.</p>
-                                    <button class="btn btn-primary">Add to Cart</button>
+                            <div class="col-md-4">
+                                <div class="card jap-meal">
+                                    <img src="https://i.ibb.co/0Grz9CM/Omurice.png" class="card-img-top" alt="omuriceb">
+                                    <div class="card-body">
+                                        <h5 class="card-title jap-food-title">Chicken Curry Omurice Bento</h5>
+                                        <p class="card-text">Rice-stuffed omelette topped with chicken curry</p>
+                                        <br>
+                                        <p class="card-text">P250</p>
+                                        <button class="btn japbutton">Add to Cart</button>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="card">
-                                <img src="https://i.ibb.co/KyjB2nJ/Tonkotsu-1.png"
-                                    class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">Tonkotsu Ramen</h5>
-                                    <p class="card-text">Some description of pizza.</p>
-                                    <button class="btn btn-primary"
+                            <div class="col-md-4">
+                                <div class="card jap-meal">
+                                    <img src="https://i.ibb.co/KyjB2nJ/Tonkotsu-1.png"
+                                    class="card-img-top" alt="tonkotsurmn">
+                                    <div class="card-body">
+                                        <h5 class="card-title jap-food-title">Tonkotsu Ramen</h5>
+                                        <p class="card-text">Classic creamy ramen</p>
+                                        <br>
+                                        <p class="card-text">P475</p>
+                                        <button class="btn japbutton"
                                         onclick="var a=350; var b='Tonkotsu Ramen'; addtocart(a,b)">Add to Cart</button>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
                     </div>
-                </div>
             </div>
             <br>
 
