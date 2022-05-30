@@ -23,10 +23,15 @@
             display: none;
         }
 
+        #foodcard {
+            background-color: white;
+            border: none;
+        }
+
         #foodslides {
             margin-top: 30px;
             margin-bottom: 20px;
-
+            padding: 20px;
         }
 
         #china {
@@ -413,7 +418,7 @@
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="#china">CHINESE</a></li>
                             <li><a class="dropdown-item" href="#fili">FILIPINO</a></li>
-                            <li><a class="dropdown-item" href="#india">INIDAN</a></li>
+                            <li><a class="dropdown-item" href="#indie">INIDAN</a></li>
                             <li><a class="dropdown-item" href="#japan">JAPANESE</a></li>
                         </ul>
                     </li>
@@ -428,48 +433,49 @@
     <div class="container-lg">
         <div class="row">
             <div class="col-sm-12">
-                <div id="foodslides" class="carousel slide" data-bs-ride="carousel">
+                <div class="card" id="foodcard">
+                    <div id="foodslides" class="carousel slide" data-bs-ride="carousel">
 
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
-                        <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
-                        <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
-                        <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
-                        <button type="button" data-bs-target="#demo" data-bs-slide-to="4"></button>
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                            <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                            <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                            <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+                            <button type="button" data-bs-target="#demo" data-bs-slide-to="4"></button>
+                        </div>
+    
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="https://i.ibb.co/Yj43n7Z/Welcome-to-Asian-Express.png"
+                                    alt="Welcome-to-Asian-Express" class="d-block">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://i.ibb.co/fkTBBj9/Hot-Pot-1.png" alt="Hot-Pot" class="d-block" onclick="var a=3500; var b='Hot Pot'; addtocart(a,b)">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://i.ibb.co/fDcyb3F/Grand-Indian-Bowl.png" alt="Grand-Indian-Bowl"
+                                    class="d-block" onclick="var a=20000; var b='Grand Indian Bowl'; addtocart(a,b)">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://i.ibb.co/yPbGN62/Shabu-Shabu-1.png" alt="Shabu-Shabu" class="d-block" onclick="var a=4000; var b='Shabu Shabu and Sukiyaki'; addtocart(a,b)">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://i.ibb.co/VHsJ9Jg/Lechon-Cebu-2.png" alt="Lechon-Cebu-2" class="d-block" onclick="var a=10000; var b='Lechon-Cebu'; addtocart(a,b)">
+                            </div>
+                        </div>
+    
+                        <button class="carousel-control-prev" type="button" data-bs-target="#foodslides"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#foodslides"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </button>
                     </div>
-
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="https://i.ibb.co/Yj43n7Z/Welcome-to-Asian-Express.png"
-                                alt="Welcome-to-Asian-Express" class="d-block">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="https://i.ibb.co/fkTBBj9/Hot-Pot-1.png" alt="Hot-Pot" class="d-block" onclick="var a=3500; var b='Hot Pot'; addtocart(a,b)">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="https://i.ibb.co/fDcyb3F/Grand-Indian-Bowl.png" alt="Grand-Indian-Bowl"
-                                class="d-block" onclick="var a=20000; var b='Grand Indian Bowl'; addtocart(a,b)">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="https://i.ibb.co/yPbGN62/Shabu-Shabu-1.png" alt="Shabu-Shabu" class="d-block" onclick="var a=4000; var b='Shabu Shabu and Sukiyaki'; addtocart(a,b)">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="https://i.ibb.co/VHsJ9Jg/Lechon-Cebu-2.png" alt="Lechon-Cebu-2" class="d-block" onclick="var a=10000; var b='Lechon-Cebu'; addtocart(a,b)">
-                        </div>
-                    </div>
-
-                    <button class="carousel-control-prev" type="button" data-bs-target="#foodslides"
-                        data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon"></span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#foodslides"
-                        data-bs-slide="next">
-                        <span class="carousel-control-next-icon"></span>
-                    </button>
                 </div>
             </div>
         </div>
-        <br>
 
         <div class="card" id="china">
             <h2 id="tsina">Chinese Cuisines</h2>
@@ -533,7 +539,7 @@
                             <p class="card-text">Rice, veggies and meat, tenfold</p>
                             <br>
                             <p class="card-text">P450</p>
-                            <button class="btn chinabutton" onclick="var a=450; var b='Yangzhou Fried Rice'; addtocart(a,b)"">Add to Cart</button>
+                            <button class="btn chinabutton" onclick="var a=450; var b='Yangzhou Fried Rice'; addtocart(a,b)">Add to Cart</button>
                         </div>
                     </div>
                 </div>
@@ -546,13 +552,12 @@
                             <p class="card-text">A tofu set is your go-to bet</p>
                             <br>
                             <p class="card-text">P400</p>
-                            <button class="btn chinabutton" onclick="var a=400; var b='Ma Po Tofu'; addtocart(a,b)"">Add to Cart</button>
+                            <button class="btn chinabutton" onclick="var a=400; var b='Ma Po Tofu'; addtocart(a,b)">Add to Cart</button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <br>
 
         <div class="card" id="fili">
             <h2 id="pinoy">Filipino Specialties</h2>
@@ -634,7 +639,6 @@
                 </div>
             </div>
         </div>
-        <br>
 
         <div class="card" id="india">
             <h2 id="indian">Indian Feasts</h2>
@@ -723,7 +727,6 @@
                 </div>
             </div>
         </div>
-        <br>
 
         <div class="card" id="japan">
             <h2 id="japanese">Japanese Culinaries</h2>
